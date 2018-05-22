@@ -1,0 +1,308 @@
+
+page
+{
+	background-image: url('CAHomeBKG.jpg');
+	vertical-align:middle
+}
+
+
+	
+	
+.pagefooter
+{
+	left: 0px;
+	background-position: right;
+	top: 100px;
+	font-family: Arial,san-serif;
+	width: 700px;
+	background-color: #FFFFFF;
+	color: #FFFFFF;
+	right: 300px;
+	padding-left: 120px;
+	padding-top: 40px;
+	left: 100px;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+
+body
+{
+	background-color: #C0C0C0;
+}
+
+
+ /* External style ID for div wrapper */
+    
+ #wrapper
+{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('CAHomeBKG.jpg');
+	background-repeat: repeat-y
+}
+    
+    
+
+
+
+/* Header styles */
+
+
+div
+{
+	
+	font-family: Calibri;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+}
+
+
+.HeaderTitle
+{
+	background-image: url('../images/webface.jpg');
+	left: 200px;
+	top: 400px;
+	font-family: Verdana;
+	width: 920px;
+	background-color:#003399;
+	color: #FFFFFF;
+	font-size: x-large;
+	background-repeat: no-repeat;
+	font-weight: normal;
+	text-align: right
+	
+}
+
+.HeaderSubTitle
+{
+	left: 0px;
+	background-position:  right 50%;
+	top: 100px;
+	font-family: Arial,san-serif;
+	width: 799px;
+	background-color: #003399;
+	color: #FFFFFF;
+	font-size: x-large;
+	right: 400px;
+	padding-left: 120px;
+	padding-top: 40px;
+	background-image: url('../images/ComputingBknd.bmp');
+	left: 200px;
+	background-repeat: no-repeat
+}
+
+
+
+/*Content styles */
+
+
+.ConTitle
+{
+	background-image: url('../images/GFAEHeaderBox.gif');
+	font-family: Calibri;
+	font-size: x-large;
+	font-weight: normal;
+	color: #FFFFFF;
+	width: 84.5%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #3366CC
+}
+
+
+
+.TopContent
+{
+	
+	border: thin ridge #FF6600;
+	padding: 20px;
+	background-color: #FFFFFF;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.ConFooter
+{
+width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #003399;
+	height: 10px;
+}
+
+
+
+p
+{
+	
+	font-family: Calibri;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+}
+
+
+/*Definition list with selected font-weight,style and size */
+
+dl
+{
+		
+	font-family: Calibri;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-repeat: repeat-x;
+	font-weight: 300;
+	font-size:medium;
+}
+
+
+
+/*Ordered listed with selected background color */
+	
+ol
+{
+	
+	font-family: Calibri;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-repeat: repeat-x;
+	list-style-type: lower-roman;
+	
+}
+
+
+/*Nav button behaviours*/
+
+
+	#HorizontalNavBar
+{
+	width: 919px;
+	height: 30px;
+	margin: 0 0 0 1px;
+	padding: 0 0 30 60;
+	position: inherit;
+	background-color: #FF9933;
+}
+	
+	#HorizontalNavBar p
+{
+	
+	text-align: center;
+	line-height: normal;
+	font-size: 18px;
+}
+
+	#HorizontalNavBar a
+{
+	border-color: #FF9933;
+	color: #FFFFFF;
+	font-size: x-large;
+	text-decoration: none;
+	font-family: Calibri;
+	left: 20px;
+	float: left;
+	background-color: #FF9933;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+	#HorizontalNavBar a:hover
+{
+	text-decoration: underline;
+	background-color: #FF6600;
+}
+
+     #HorizontalNavBar2
+{
+	width: 819px;
+	height: 30px;
+	margin: 0 0 0 1px;
+	padding: 0 0 30 60;
+	position: inherit;
+	background-color: #FF9933;
+}
+
+#HorizontalNavBar2 p
+{
+	
+	text-align: center;
+	line-height: normal;
+	font-size: 18px;
+}
+
+	#HorizontalNavBar2 a
+{
+	border-color: #FF9933;
+	color: #FFFFFF;
+	font-size: x-large;
+	text-decoration: none;
+	font-family: Calibri;
+	left: 20px;
+	float: left;
+	background-color: #FF9933;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+	#HorizontalNavBar2 a:hover
+{
+	text-decoration: underline;
+	background-color: #FF6600;
+}
+
+
+	#BottomNavBar
+{
+	width: 830px;
+	height: 30px;
+	margin: auto;
+	padding: auto;
+	position: inherit;
+	background-color: #FFCC66;
+	color: #FFFFFF;
+}
+	
+
+
+/*Anchor behaviours*/
+
+a:link
+{
+	background-color: #ffffff;
+	color: #0000FF;
+}
+
+
+a:visited
+{
+	background-color: #ffffff;
+	color: #800080;
+}
+
+
+a:focus
+{
+	background-color: #ffffff;
+	color: #008080;
+	text-decoration: none;
+}
+
+
+a:hover
+{
+	background-color: #ffffff;
+	color: #000080;
+	text-decoration: none;
+}
+
+
+a:active
+{
+	background-color: #ffffff;
+	color: #0066FF;
+	text-decoration: none;
+}

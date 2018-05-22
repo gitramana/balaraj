@@ -1,0 +1,418 @@
+
+ /* External style ID for div wrapper */
+    
+ #wrapper
+{
+	width: 1150px;
+	height:2930px;
+	margin-left: 100px;
+	margin-right: auto;
+	background-image: url('1.jpg');
+	background-repeat:repeat-y;
+	background-size: 1200px;	
+	border:1px solid #39b1cc;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	
+}
+    
+    
+
+.HeaderTitle
+{
+	background-image: url('../images/webface.jpg');
+	position: absolute;
+	top:0;
+	margin-left: auto;
+	width: 1200px;
+	height: 150px;
+	background-color:#003399;
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+	font-family:verdana;
+	
+	text-align: center;
+	
+}
+.ads2
+{
+	position: absolute;
+    top:100px;
+	padding-left:900px;
+	padding-right:0px;
+	padding-bottom:0px;
+	margin-left: auto;
+	margin-right: auto;
+	
+		
+}
+
+ul.topnav {
+ 	position: absolute;
+	margin:0;
+	padding:0;
+        list-style:none;
+        float:left;
+        background:#ff2222;
+}
+
+ul.topnav li{
+float:left;
+
+text-align:center;
+width:150px;
+height:30px;
+line-height:30px;
+background:url(../images/menu_split.gif) no-repeat right top;
+
+}
+
+ul.topnav li a{
+text-decoration:none;
+color:#fff;
+}
+
+
+ul.topnav li li{
+background:#ff0000;
+color:#fff;
+display:none;
+}
+
+ul.topnav li li:hover{
+background:#555;
+}
+
+ul.topnav li li a{
+text-decoration:none;
+color:#fff;
+}
+/*Anchor behaviours*/
+
+ul.topnav a:link
+{
+	
+	color: #00ccff;
+}
+
+
+ul.topnav a:visited
+{
+	
+	color: #800080;
+}
+
+
+ul.topnav a:focus
+{
+	
+	color: #00ccff;
+	text-decoration: none;
+}
+
+ul.topnav a:hover
+{
+	text-decoration: underline;
+		color: #000080;
+	
+}
+
+
+ul.topnav a:active
+{
+		color: #33ccff;
+	text-decoration: none;
+}
+
+.HeaderSubTitle
+{
+	width: 1200px;
+	background-color: #003399;
+	padding-left:0px;
+	padding-top: 230px;
+	background-image: url('comhead.bmp');
+	background-position:right 250%;
+	background-repeat: no-repeat
+}
+.photoslider
+{
+ position: absolute; 
+ top:230px;
+ left: 0px;  
+ bottom: 0px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.ConFooter1
+{
+    width: 1030px;
+	bottom: 0px;
+	position: absolute; 
+	top:450px;
+	left:150px;
+	background-color: #003399;
+	height: 10px;
+}
+.intro
+{
+ position: absolute; 
+ top:710px;
+  left: 100px;  
+ bottom: 0px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.intro1
+{
+ position: absolute; 
+ top:230px;
+  left: 100px;  
+ bottom: 0px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.co
+{
+ position: absolute; 
+ top:1200px;
+  left: 100px;  
+ bottom: 0px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.ConTitle
+{
+    width: 1100px; 
+    height: 30px;
+	background-color: #003399;
+	background-image: url('../images/title.jpg');
+	background-position: 1000px;
+	font-size:x-large;
+}
+
+
+
+.TopContent
+{
+        width: 1058px; 
+        top:30px;
+	border: thin ridge #FF6600;
+	padding: 20px;
+	background-color: #FFFFCC;
+	font-size:x-large;
+}
+
+.ConFooter
+{
+width: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #003399;
+	height: 10px;
+}
+
+     #HorizontalNavBar2
+{
+	
+        width: 1154px;
+	height: 30px;
+  	position: absolute; 
+        left: -102px;  
+        margin-left: auto;
+	margin-right: auto;
+        
+        background-image: url('../images/title.jpg');
+	
+	
+}
+
+#HorizontalNavBar2 p
+{
+	
+	text-align: center;
+	line-height: normal;
+	font-size: 18px;
+}
+
+	#HorizontalNavBar2 a
+{
+	border-color: #FF9933;
+	color: #FFFFFF;
+	font-size: x-large;
+	text-decoration: none;
+	font-family: Calibri;
+	left: 20px;
+	float: left;
+	background-color: #FF9933;
+        background-image: url('../images/title.jpg');
+	padding-left: 40px;
+	padding-right: 30px;
+}
+
+	#HorizontalNavBar2 a:hover
+{
+	text-decoration: underline;
+	background-color: #FF6600;
+}
+
+
+/** CLEARING FLOATS **/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+.clear{clear: both;}
+
+/** GLOBAL STYLES **/
+/* Header, Content , Footer */
+
+
+
+
+.desig{
+	color: #ccc;
+	font-size: 12px;
+}
+
+
+/* ART PORTFOLIO */
+ul#art{margin-top: 30px;}
+ul#art li{margin: 0 24px 16px 0; float: left; list-style:none; }
+ul#art li.last_in_row{margin-right: 0;}
+ul#art a {display: inline-block; width: 140px; height: 140px; overflow: hidden;}
+ul#art a img{transition: all 0.2s linear;}
+ul#art a:hover img{transform: scale(1.1); opacity: 0.8;}
+ul#art img{border-radius: 3px;}
+ul#art li:hover{ }
+
+
+
+
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CC Attribution-No Derivative Works 2.5 Brazil - http://creativecommons.org/licenses/by-nd/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+	float: right;
+	position: absolute;
+	top: -20px;
+	right: -24px;
+}
+p.MsoHeader
+	{margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:18.0pt;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:16.0pt;
+	font-family:"Times New Roman","serif"}
