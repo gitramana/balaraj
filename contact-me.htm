@@ -1,0 +1,236 @@
+﻿
+<?php
+
+
+$msg = "";
+$sql = "";
+
+$submit = isset( $_POST['submit']);
+//$name = $_POST['name'];
+//$email = $_POST['email'];
+//$enquiry = $_POST['enquiry'];
+
+
+if(!empty($_POST['name'])){
+$name = $_POST['name'];
+}
+if(!empty($_POST['email'])){
+$email = $_POST['email'];
+}
+if(!empty($_POST['enquiry'])){
+$enquiry = $_POST['enquiry'];
+}
+  
+if(isset($_GET['result']))
+{
+$submit= $_GET['result'];
+}
+  if($submit=="error"){
+
+     if(!empty($name)){
+		if(!empty($email)){
+		  if(!empty($enquiry)){
+			  
+			$email = $_POST['email'];
+                    $message = $_POST['message'];
+$formcontent="From: $name \n Message: $message";
+$recipient = "r.balaraju@gmail.com";
+$subject = "Contact Form";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+			
+					$retval = mail ($to,$subject,$message,$header);
+					if( $retval)
+					
+		      if($retval) $msg = "enquiry successifuly sent !!";
+			    
+			  
+		  else $msg = "enquiry sending failed !!";
+			}
+	   else $msg ="Name is required !!";
+		}
+		
+	 else $msg = "Email is required !!";
+	 }
+	else $msg = "Enquiry is required !!";
+  }
+?>
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <title>Rachakonda Balaraju</title>
+
+    <!-- Source style from external CSS style sheet -->
+    <link rel="icon" type="image/png" href="images/favicon.jpg" />
+	<link rel="stylesheet" type="text/css" media="screen,projection" href="css\style.css" />
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('li').hover(function(){
+$(this).find('ul>li').stop().fadeToggle(300);
+});
+});
+</script>
+	
+ 
+</head>
+<body bgcolor="#cceeee">
+
+
+<div id="wrapper" style="position: absolute; height: 1250px;left:100px; top:0px">
+
+
+<div class="HeaderTitle">
+
+
+
+<div class="ads2">
+<table>
+<tr>
+<td>&nbsp <a href="https://www.facebook.com/raj4mindia" > <img src="images/icon_facebook.png" width="40" height="40" alt="facebook"  ></td></a>
+<td>&nbsp&nbsp<a href="https://twitter.com/balu4mindia" ><img src="images/icon_twitter.png" width="40" height="40" alt="twitter" ></td></a>
+<td>&nbsp&nbsp<a href="http://in.linkedin.com/in/rachakondabalaraju" ><img src="images/icon_linkedin.png" width="40" height="40" alt="linkedin" ></td></a>
+<td>&nbsp&nbsp<a href="https://vimeo.com/user37034528" ><img src="images/icon_vimeo.png" width="40" height="40" alt="vimeo" ></td></a>
+<td>&nbsp&nbsp<a href="google.com/+RachakondaBalaraju" ><img src="images/icon_google-plus.png" width="40" height="40" alt="googleplus" ></td></a>
+</tr>
+</table>
+
+</div>
+<p>
+<!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%A, %B %d, %Y %I:%M %p" startspan -->Wednesday, May 23, 2018 02:29 PM<!--webbot bot="Timestamp" endspan i-checksum="3345" --></p>
+  <p><h1><b>Rachakonda Balaraju Profile &nbsp &nbsp</b></h1> </p>
+   <p><h3>E-mail:r.balaraju@gmail.com &nbsp&nbsp</p></h3>
+  <h3>Mobile: +265 996639468 &nbsp<br/></h3>
+</div>
+ <!--Nav bar -->
+
+<div style="position: absolute; top:150px; left: 0px;  width: 1200px; background-color:#ff3399;  font-family: Arial, Helvetica, sans-serif; font-weight:bold; font-size:24px; padding-top:3px;">
+<ul class="topnav">
+   
+	<li><a href="index.htm">Home</a></li>
+    <li><a href="education.htm">Education</a></li>
+    <li><a href="experiances.htm">Experiances</a></li>
+    <li><a href="activities.htm">Activities</a></li>
+    <li><a href="personal.htm">Personal</a></li>
+    <li><a href="gallery.htm">Gallery</a></li>
+    <li><a href="references.htm">References</a></li>
+    <li><a href="#">Projects</a>
+	 <ul class="topnav">
+            <li><a href="degree.htm">Degree Project</a></li>
+            <li><a href="pg.htm">P.G Projects</a></li>
+			
+    </ul>
+    </li>
+</ul>
+</div>
+
+<div class="HeaderSubTitle"></div>
+
+<div class="intro1">
+
+
+<!-- Begining of Top Section-->
+
+
+<div class="ConTitle">Contact Me:</div>
+
+<div class="TopContent">
+
+<fieldset class="formFieldset">
+<legend>Contact Me</legend>
+<!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly --> 
+<ol class="formContainer" id="rsform_5_page_0">
+	<li class="rsform-block rsform-block-title">
+	<div class="formCaption">
+		Title<strong class="formRequired">(*)</strong></div>
+	<div class="formBody">
+		<select name="form[Title][]" class="rsform-select-box" id="Title">
+		<option value="Mr" selected>Mr</option>
+		<option value="Mrs">Mrs</option>
+		<option value="Ms">Ms</option>
+		</select></div>
+	<div class="formDescription">
+&nbsp;</div>
+	</li>
+	<li class="rsform-block rsform-block-name">
+	<div class="formCaption">
+		First name:<strong class="formRequired">(*)</strong></div>
+	<div class="formBody">
+		<input name="form[Name]" class="rsform-input-box" id="Name" type="text" size="20" value><span class="formClr"><span class="formNoError" id="component57"></span></span></div>
+	<div class="formDescription">
+&nbsp;</div>
+	</li>
+	<li class="rsform-block rsform-block-surname">
+	<div class="formCaption">
+		Last (Family) Name:<strong class="formRequired">(*)</strong></div>
+	<div class="formBody">
+		<input name="form[Surname]" class="rsform-input-box" id="Surname" type="text" size="20" value><span class="formClr"><span class="formNoError" id="component56"></span></span></div>
+	<div class="formDescription">
+&nbsp;</div>
+	</li>
+	<li class="rsform-block rsform-block-email-address">
+	<div class="formCaption">
+		Email Address:<strong class="formRequired">(*)</strong></div>
+	<div class="formBody">
+		<input name="form[Email Address]" class="rsform-input-box" id="Email Address" type="text" size="20" value><span class="formClr"><span class="formNoError" id="component55"></span></span></div>
+	<div class="formDescription">
+&nbsp;</div>
+	</li>
+	<li class="rsform-block rsform-block-phone">
+	<div class="formCaption">
+		
+Mobile Number:<strong class="formRequired">(*)</strong></div>
+	<div class="formBody">
+		<input name="form[Phone]" class="rsform-input-box" id="Phone" type="text" size="10" value><span class="formNoError"> Ex: +265 669939468</span></div>
+	<div class="formDescription">
+&nbsp;</div>
+	</li>
+	<li class="rsform-block rsform-block-message">
+	<div class="formCaption">
+		Message:<strong class="formRequired">(*)</strong></div>
+	<div class="formBody">
+		<textarea name="form[Message]" class="rsform-text-box" id="Message" rows="5" cols="50"></textarea><p>&nbsp;</div>
+	</li>
+	<li class="rsform-block rsform-block-captcha">
+	<div class="formCaption">
+		Please input the text shown</div>
+	<div class="formBody">
+		<img id="captcha90" alt="Please input the text shown " src="http://ibs.ac.pg/cms/index.php/component/rsform/?task=captcha&componentId=90&tmpl=component&sid=10910390"><br>
+		<input name="form[Captcha]" class="rsform-captcha-box" id="captchaTxt90" style="width: 75px; text-align: center;" type="text" value>&nbsp;&nbsp;<a onclick="refreshCaptcha(90,'/cms/index.php/component/rsform/?task=captcha&amp;componentId=90&amp;tmpl=component'); return false;" href="javascript:void(0)">Refresh</a></div>
+	<div class="formDescription">
+&nbsp;</div>
+	</li>
+	<li class="rsform-block rsform-block-send-form">
+	<div class="formCaption">
+		Send Details</div>
+	<div class="formBody">
+		<input name="form[Send Form]" class="rsform-submit-button" id="Send Form" type="submit" value="Send Details"></div>
+	</li>
+</ol>
+</fieldset>
+</div>
+<div class="ConFooter"></div></br>
+
+<!-- start of Bottom Section-->
+<!--Nav bar -->
+<div id="HorizontalNavBar2">
+<a href="index.htm">Home</a>
+<a href="files/raj.docx">My CV </a>
+<a href="feedback.htm">Feedback</a> 
+<a href="contact-me.htm">Contact me</a>
+</div>
+</br>
+<p style="text-align: center;"><span style="color: black;">Copyright © <script>document.write(new Date().getFullYear());</script> Rachakonda Balaraju.</p> </div>
+</div>
+</body>
+</html>
